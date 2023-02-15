@@ -6,7 +6,6 @@ export const Layout = styled.section`
   align-items: center;
   height: 100vh;
   width: 100%;
-  background-color: palevioletred;
 `;
 export const Wrapper = styled.div`
   display: flex;
@@ -15,6 +14,8 @@ export const Wrapper = styled.div`
   height: 90%;
   width: 576px;
   margin: 0 auto;
+  background-color: palevioletred;
 
-  background-color: white;
+  border: 1px solid palevioletred;
+  border-radius: 7%;
 `;

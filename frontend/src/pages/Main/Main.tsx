@@ -1,19 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import Layout from '../../components/common/Layout/Layout';
+import Header from '../../components/common/Header/Header';
 
 const Main = () => {
   return (
-    <Layout>
+    <>
+      <Header title="TodoList" />
       <span>hi</span>
       <span>hi</span>
       <span>hi</span>
       <span>hi</span>
-      <span>hi</span>
-      <span>hi</span>
-      <span>hi</span>
-      <span>hi</span>
-    </Layout>
+    </>
   );
 };
 
