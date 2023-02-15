@@ -15,7 +15,5 @@ export const Wrapper = styled.div`
   width: 576px;
   margin: 0 auto;
   background-color: palevioletred;
-
-  border: 1px solid palevioletred;
   border-radius: 7%;
 `;
