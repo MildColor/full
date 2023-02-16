@@ -2,6 +2,7 @@ import { DefaultTheme, css } from 'styled-components';
 
 export const colors = {
   blue: {
+    '0': '#5871A3',
     '3': '#438AFF',
     '5': '#A1C5FF',
   },
@@ -12,10 +13,22 @@ export const colors = {
   },
   white: {
     '0': '#FFFFFF',
+    '1': '#EDECEE',
   },
   red: {
     '0': '#FF0000',
     '3': '#FF8080',
+  },
+
+  pink: {
+    '0': '#EFCBD3',
+    '1': '#836D6D',
+  },
+  brown: {
+    '0': '#E9E6E5',
+  },
+  green: {
+    '0': '#C5D7D2',
   },
 } as const;
 

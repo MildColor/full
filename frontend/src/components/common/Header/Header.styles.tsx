@@ -6,6 +6,7 @@ export const Header = styled.section`
   align-items: center;
   width: 100%;
   height: 100px;
-  font-size: 30px;
+  font-size: 2.5rem;
   font-weight: 800;
+  color: ${({ theme }) => theme.colors.blue[0]};
 `;

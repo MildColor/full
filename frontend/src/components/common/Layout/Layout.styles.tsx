@@ -14,6 +14,7 @@ export const Wrapper = styled.div`
   height: 90%;
   width: 576px;
   margin: 0 auto;
-  background-color: palevioletred;
-  border-radius: 7%;
+  background-color: ${({ theme }) => theme.colors.pink[0]};
+
+  border-radius: 10%;
 `;

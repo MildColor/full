@@ -1,18 +1,19 @@
 import React, { FC, InputHTMLAttributes } from 'react';
+import * as St from './Input.styles';
 
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   errorMessage?: string;
   placeholder?: string;
-  title?: string;
+  labelText?: string;
 }
 
-const Input: FC<InputProps> = ({}) => {
+const Input: FC<InputProps> = ({ width = '17.5rem', title, height, placeholder, errorMessage, ...props }) => {
   return (
-    <div>
-      <label></label>
-      <input type="text" />
-      <span></span>
-    </div>
+    <St.InputLayout width={width} height={height}>
+      <St.SignInFormTitle>{title}</St.SignInFormTitle>
+      <St.InputField placeholder={placeholder} {...props} />
+      <St.ErrorMessage>{errorMessage}</St.ErrorMessage>
+    </St.InputLayout>
   );
 };
 

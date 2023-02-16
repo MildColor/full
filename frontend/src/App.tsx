@@ -6,6 +6,8 @@ import Routers from './routers/Routers';
 import theme from './styles/theme';
 import Layout from './components/common/Layout/Layout';
 import './App.css';
+import GlobalStyle from './styles/globalStyle';
+import { Reset } from 'styled-reset';
 
 const queryClient = new QueryClient();
 
@@ -13,6 +15,8 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider theme={theme}>
+        <Reset />
+        <GlobalStyle />
         <Layout>
           <Routers />
         </Layout>
