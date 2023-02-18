@@ -4,7 +4,9 @@ export const getTodos = async (req, res) => {
   const todo = {
     title: "title",
     content: "content",
+    dbPassword: "jiwoon",
   };
+  console.log(process.env.DB_PASSWORD);
   return res.send(todo);
 };
 export const createTodo = async (req, res) => {};

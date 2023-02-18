@@ -2,10 +2,12 @@ import mysql from "mysql";
 
 const connection = mysql.createConnection({
   host: "localhost",
-  user: "dbuser",
-  password: "s3kreee7",
-  database: "my_db",
+  user: "root",
+  password: process.env.DB_PASSWORD,
+  database: "TODOS_DB",
 });
+
+console.log(process.env.DB_PASSWORD);
 
 connection.connect();
 
